@@ -6,14 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Decbase</title>
         <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="libs/swiper11.1.4/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="libs/swiper11.1.4/swiper-bundle.min.js" defer></script>
         <script src="js/main.js" defer></script>
     </head>
     <body>
         <header class="header">
             <div class="container container--padding">
                 <div class="header__wrapper">
-                    <div class="logo">
+                    <div class="logo logo__header">
                         <img
                             src="./images/logo.png"
                             alt="Logo: DECBASE"
@@ -26,52 +28,54 @@
                             <ul class="header__list">
                                 <li class="header__list-item">
                                     <a
-                                        href="#"
+                                        href="/"
                                         class="header__nav-link header__nav-link--active"
                                         >HOME</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#project" class="header__nav-link"
                                         >PROJECT</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#services" class="header__nav-link"
                                         >SERVICES</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#about" class="header__nav-link"
                                         >ABOUT</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#blog" class="header__nav-link"
                                         >BLOG</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#shop" class="header__nav-link"
                                         >SHOP</a
                                     >
                                 </li>
                                 <li class="header__list-item">
-                                    <a href="#" class="header__nav-link"
+                                    <a href="#contacts" class="header__nav-link"
                                         >CONTACT</a
                                     >
                                 </li>
                             </ul>
                         </nav>
-
+                        <div class="burger">
+                            <div class="burger__line"></div>
+                        </div>
                         <button class="btn btn--header">Sign Up</button>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main class="main">
-            <section class="create">
+        <main class="main dn">
+            <section class="create" id="project">
                 <div class="create__wrapper">
                     <div class="container">
                         <div class="create__grid">
@@ -104,106 +108,174 @@
                 </div>
             </section>
 
-            <section class="service">
+            <section class="service" id="services">
                 <div class="container container--padding">
                     <h3 class="subtitle">WHAT WE DO</h3>
                     <h2 class="title">Our Service</h2>
-                    <div class="service__slider">
-                        <div class="service__item">
-                            <div class="service__item-img">
-                                <img
-                                    src="./images/service-slider/icon-1.png"
-                                    alt="Interior Design"
-                                    class="service__slider-icon"
-                                />
-                            </div>
-                            <div class="service__item-content">
-                                <h4 class="service__item-title">
-                                    Interior Design
-                                </h4>
-                                <p class="service__item-text">
-                                    Lorem ipsum dolor amet consectetur
-                                    adipiscing elit sed eiusmod tempor
-                                    incididunt ut labore.
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="service__item service__item--active">
-                            <div class="service__item-img">
-                                <img
-                                    src="./images/service-slider/icon-3.png"
-                                    alt="Interior Design"
-                                    class="service__slider-icon"
-                                />
-                            </div>
-                            <div class="service__item-content">
-                                <h4 class="service__item-title">
-                                    Architecture
-                                </h4>
-                                <p class="service__item-text">
-                                    Lorem ipsum dolor amet consectetur
-                                    adipiscing elit sed eiusmod tempor
-                                    incididunt ut labore.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="service__item">
-                            <div class="service__item-img">
-                                <img
-                                    src="./images/service-slider/icon-3.png"
-                                    alt="Interior Design"
-                                    class="service__slider-icon"
-                                />
-                            </div>
-                            <div class="service__item-content">
-                                <h4 class="service__item-title">Planning</h4>
-                                <p class="service__item-text">
-                                    Lorem ipsum dolor amet consectetur
-                                    adipiscing elit sed eiusmod tempor
-                                    incididunt ut labore.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="service__arrows">
-                            <button class="slider-btn slider-btn--service">
-                                <svg
-                                    width="7"
-                                    height="10"
-                                    viewBox="0 0 7 10"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M6 1L2 5L6 9"
-                                        stroke="currentColor"
-                                        stroke-width="2"
+                    <div class="service__slider swiper">
+                        <div class="service__slider-wrapper swiper-wrapper">
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-1.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
                                     />
-                                </svg>
-                            </button>
-                            <button class="slider-btn slider-btn--service">
-                                <svg
-                                    width="7"
-                                    height="11"
-                                    viewBox="0 0 7 11"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 1L5 5.5L1 10"
-                                        stroke="currentColor"
-                                        stroke-width="2"
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Interior Design
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-3.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
                                     />
-                                </svg>
-                            </button>
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Architecture
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-3.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
+                                    />
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Planning
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-1.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
+                                    />
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Interior Design
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-3.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
+                                    />
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Architecture
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service__item swiper-slide">
+                                <div class="service__item-img">
+                                    <img
+                                        src="./images/service-slider/icon-3.png"
+                                        alt="Interior Design"
+                                        class="service__slider-icon"
+                                    />
+                                </div>
+                                <div class="service__item-content">
+                                    <h4 class="service__item-title">
+                                        Planning
+                                    </h4>
+                                    <p class="service__item-text">
+                                        Lorem ipsum dolor amet consectetur
+                                        adipiscing elit sed eiusmod tempor
+                                        incididunt ut labore.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="service__arrows">
+                        <button
+                            class="slider-btn slider-btn--service slider-btn--service-prev"
+                        >
+                            <svg
+                                width="7"
+                                height="10"
+                                viewBox="0 0 7 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 1L2 5L6 9"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            class="slider-btn slider-btn--service slider-btn--service-next"
+                        >
+                            <svg
+                                width="7"
+                                height="11"
+                                viewBox="0 0 7 11"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 1L5 5.5L1 10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container container--padding">
                     <div class="about__decor-block"></div>
                     <div class="wrapper">
@@ -274,7 +346,7 @@
                 </div>
             </section>
 
-            <section class="result">
+            <section class="result" id="shop">
                 <div class="container container--padding">
                     <div class="title-wrapper">
                         <h2 class="title title--result">
@@ -354,90 +426,150 @@
             </section>
 
             <section class="reviews">
-                <div class="container container--padding">
+                <div class="container">
                     <h3 class="subtitle subtitle--reviews">TESTIMONIALS</h3>
                     <h2 class="title title--reviews">Client says about us</h2>
 
-                    <div class="reviews__slider">
-                        <div class="reviews__item">
-                            <div class="reviews__img-wrap">
-                                <img
-                                    src="./images/reviews-users/user-1.jpg"
-                                    alt="Client"
-                                    class="reviews__img"
-                                />
+                    <div class="reviews__slider swiper">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                            <div class="reviews__item-wrap swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__img-wrap">
+                                        <img
+                                            src="./images/reviews-users/user-1.jpg"
+                                            alt="Client"
+                                            class="reviews__img"
+                                        />
+                                    </div>
+                                    <h3 class="reviews__name">
+                                        Louis Saville
+                                        <span class="reviews__name-desc"
+                                            >/CEO at Google inc</span
+                                        >
+                                    </h3>
+                                    <p class="reviews__desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="reviews__name">
-                                Louis Saville
-                                <span class="reviews__name-desc"
-                                    >/CEO at Google inc</span
-                                >
-                            </h3>
-                            <p class="reviews__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
 
-                        <div class="reviews__item">
-                            <div class="reviews__img-wrap">
-                                <img
-                                    src="./images/reviews-users/user-2.jpg"
-                                    alt="Client"
-                                    class="reviews__img"
-                                />
+                            <div class="reviews__item-wrap swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__img-wrap">
+                                        <img
+                                            src="./images/reviews-users/user-2.jpg"
+                                            alt="Client"
+                                            class="reviews__img"
+                                        />
+                                    </div>
+                                    <h3 class="reviews__name">
+                                        Rekha Varadwaz
+                                        <span class="reviews__name-desc"
+                                            >/Manager at Nike inc</span
+                                        >
+                                    </h3>
+                                    <p class="reviews__desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
                             </div>
-                            <h3 class="reviews__name">
-                                Rekha Varadwaz
-                                <span class="reviews__name-desc"
-                                    >/Manager at Nike inc</span
-                                >
-                            </h3>
-                            <p class="reviews__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
 
-                        <div class="reviews__arrows">
-                            <button class="slider-btn slider-btn--reviews">
-                                <svg
-                                    width="7"
-                                    height="10"
-                                    viewBox="0 0 7 10"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M6 1L2 5L6 9"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    />
-                                </svg>
-                            </button>
-                            <button class="slider-btn slider-btn--reviews">
-                                <svg
-                                    width="7"
-                                    height="11"
-                                    viewBox="0 0 7 11"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 1L5 5.5L1 10"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    />
-                                </svg>
-                            </button>
+                            <div class="reviews__item-wrap swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__img-wrap">
+                                        <img
+                                            src="./images/reviews-users/user-1.jpg"
+                                            alt="Client"
+                                            class="reviews__img"
+                                        />
+                                    </div>
+                                    <h3 class="reviews__name">
+                                        Louis Saville
+                                        <span class="reviews__name-desc"
+                                            >/CEO at Google inc</span
+                                        >
+                                    </h3>
+                                    <p class="reviews__desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="reviews__item-wrap swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__img-wrap">
+                                        <img
+                                            src="./images/reviews-users/user-2.jpg"
+                                            alt="Client"
+                                            class="reviews__img"
+                                        />
+                                    </div>
+                                    <h3 class="reviews__name">
+                                        Rekha Varadwaz
+                                        <span class="reviews__name-desc"
+                                            >/Manager at Nike inc</span
+                                        >
+                                    </h3>
+                                    <p class="reviews__desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="reviews__arrows">
+                        <button
+                            class="slider-btn slider-btn--reviews slider-btn--reviews-prev"
+                        >
+                            <svg
+                                width="7"
+                                height="10"
+                                viewBox="0 0 7 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 1L2 5L6 9"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            class="slider-btn slider-btn--reviews slider-btn--reviews-next"
+                        >
+                            <svg
+                                width="7"
+                                height="11"
+                                viewBox="0 0 7 11"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 1L5 5.5L1 10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container container--padding">
                     <h3 class="subtitle subtitle--blog">LETEST NEWS</h3>
                     <h2 class="title title--blog">From Our Blog</h2>
@@ -515,7 +647,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer dn" id="contacts">
             <div class="footer__wrap">
                 <div class="container container--padding">
                     <div class="footer__wrapper">
